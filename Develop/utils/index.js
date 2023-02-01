@@ -128,16 +128,36 @@ const questions = [
     },
 ]
 
-
-
-
-
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+const writeToFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./generateREADME.md', fileContent, err => {
+            // if there's an error, reject the Promise
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve({
+                ok: true,
+                message: 'File created!'
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() { 
+    // Prompts the user for input
+    inquirer.prompt(questions)
+    .then(function(answer) {
+        console.log(answer);
+        var fileContent = generateMarkdown(answer);
+        writeToFile(fileContent);
+    });
+    }
 
 // Function call to initialize app
 init();
+
+//exporting the questions array
+module.exports = questions;
