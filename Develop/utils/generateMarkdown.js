@@ -39,7 +39,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseSection = '';
-  if(license === 'None') {
+  if(license === '') {
     licenseSection = '';
   } else {
     licenseSection = 'license: ${license}';
@@ -51,9 +51,12 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answer) {
-  return `# ${answer.title}
+  
+  return `
+  # ${answer.title}
 
-  ## ${renderLicenseSection(answer.license)} ${renderLicenseBadge(answer.license)} ${renderLicenseLink(answer.license)}
+  ##  ${renderLicenseBadge(answer.license)} 
+  ### ${renderLicenseLink(answer.license)}
 
   ## Table of Contents:
   ### * [Description](#description)
@@ -64,20 +67,30 @@ function generateMarkdown(answer) {
   ### * [Tests](#tests)
   ### * [Questions](#questions)
 
-## Installation:
-### You must install the following dependencies to run this application: ${answer.dependencies}
 
-## Usage:
+# Description:
+### ${answer.description}
+
+# License:
+### ${answer.license}
+
+# Installation:
+## You must install the following dependencies to run this application: 
+### ${answer.dependencies}
+
+# Usage:
 ### ${answer.usage}
 
-## Contributors:
+# Contributors:
 ### ${answer.contributing}
 
-## Tests:
-### To run tests, you need to run the following command: ${answer.tests}
+# Tests:
+## To run tests, you need to run the following command: 
+### ${answer.tests}
 
-## Questions:
-### If you have any questions about the repo, open an issue or contact me directly at ${answer.email}. You can find more of my work at [${answer.username}](
+# Questions:
+## If you have any questions about the repo, open an issue or contact me directly at ${answer.email}.
+### You can find more of my work at [${answer.username}](
    
 `;
 }
