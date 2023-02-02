@@ -1,7 +1,7 @@
 // Packages required for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 
 // An array of questions for user input using inquirer with a validate function to determine if the user has entered a value
 const questions = [
