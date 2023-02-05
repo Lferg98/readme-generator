@@ -1,8 +1,7 @@
 
-  # dasd
+  # Readme-generator
 
-  ##  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
-  ### https://opensource.org/licenses/MIT
+
 
   ## Table of Contents:
   ### * [Description](#description)
@@ -15,26 +14,28 @@
 
 
 # Description:
-### asdasd
+### The application prompts the user questions to create a README file.
 
 # License:
 ### MIT
+##  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
+### https://opensource.org/licenses/MIT
 
 # Installation:
-### You must install the following dependencies to run this application: 
-### asdasd
+## You must install the following dependencies to run this application: 
+### npm install
 
 # Usage:
-### asda
+### The user must install the inquirer package. Use npm inquirer to install
 
 # Contributors:
-### d
+### Clone the repo to your local machine
 
 # Tests:
-### To run tests, you need to run the following command: 
-### ads
+## To run tests, you need to run the following command: 
+### npm test
 
 # Questions:
-### If you have any questions about the repo, open an issue or contact me directly at asdas.
-### You can find more of my work at [asdas](
+## If you have any questions about the repo, open an issue or contact me directly at lachieferg98@hotmail.com.
+### You can find more of my work at [Lferg98](
    

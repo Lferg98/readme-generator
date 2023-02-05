@@ -55,8 +55,7 @@ function generateMarkdown(answer) {
   return `
   # ${answer.title}
 
-  ##  ${renderLicenseBadge(answer.license)} 
-  ### ${renderLicenseLink(answer.license)}
+
 
   ## Table of Contents:
   ### * [Description](#description)
@@ -73,6 +72,8 @@ function generateMarkdown(answer) {
 
 # License:
 ### ${answer.license}
+##  ${renderLicenseBadge(answer.license)} 
+### ${renderLicenseLink(answer.license)}
 
 # Installation:
 ## You must install the following dependencies to run this application: 
@@ -90,7 +91,7 @@ function generateMarkdown(answer) {
 
 # Questions:
 ## If you have any questions about the repo, open an issue or contact me directly at ${answer.email}.
-### You can find more of my work at [${answer.username}](
+### You can find more of my work at ${answer.username}
    
 `;
 }
