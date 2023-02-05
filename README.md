@@ -11,5 +11,12 @@ Clone the readme-generator to your local repository. The readme contains develop
 MIT License https://opensource.org/licenses/MIT
 
 ## Screenshot 
+The following screenshots demonstates the application's funtionality:
+
+![readme-generator-demo](images/ss%201.JPG)
+![readme-generator-demo1](images/ss%202.JPG)
+
 
 ## Video Demo Link
+
+https://drive.google.com/file/d/1OExaurnRZ3KvSxeiFn2WtGYXrC6amgH2/view

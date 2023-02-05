@@ -1,5 +1,5 @@
 
-  # Readme-generator
+  # readme-generator
 
 
 
@@ -26,10 +26,10 @@
 ### npm install
 
 # Usage:
-### The user must install the inquirer package. Use npm inquirer to install
+### The user must install the inquirer package. Use npm inquirer
 
 # Contributors:
-### Clone the repo to your local machine
+### Clone the repo to your local machine.
 
 # Tests:
 ## To run tests, you need to run the following command: 
@@ -37,5 +37,5 @@
 
 # Questions:
 ## If you have any questions about the repo, open an issue or contact me directly at lachieferg98@hotmail.com.
-### You can find more of my work at [Lferg98](
+### You can find more of my work at https://github.com/Lferg98/readme-generator
    
